@@ -4,14 +4,6 @@
 Dashboard interaktif untuk menganalisis data Bike Sharing (harian dan per jam) menggunakan Streamlit.  
 Pengguna dapat memilih dataset (Day / Hour) dan memfilter data berdasarkan bulan atau jam. Dashboard menampilkan tabel data, grafik interaktif, dan statistik ringkas dari dataset.
 
-## Struktur Folder
-Submission Proyek Analisis Data_Caroline Cristine Sirait/
-├─ data/ # Berisi day.csv dan hour.csv
-├─ dashboard.py # Streamlit dashboard
-├─ requirements.txt # Daftar library yang dibutuhkan
-├─ notebook.ipnyb # Hasil analisis data
-└─ README.md
-
 
 ## Cara Menjalankan
 
