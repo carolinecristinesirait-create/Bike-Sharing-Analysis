@@ -8,9 +8,9 @@ Pengguna dapat memilih dataset (Day / Hour) dan memfilter data berdasarkan bulan
 ## Cara Menjalankan
 
 1. Jalankan dashboard:
-cd "C:\Users\Caroline Sirait\Downloads\dashboard project"
+cd /path/to/Bike-Sharing-Analysis-main
 streamlit run dashboard.py
-4. Browser akan terbuka otomatis menampilkan dashboard. Gunakan sidebar untuk memilih dataset, bulan/jam, dan melihat grafik serta statistik.
+2. Browser akan terbuka otomatis menampilkan dashboard. Gunakan sidebar untuk memilih dataset, bulan/jam, dan melihat grafik serta statistik.
 
 ## Catatan
 Pastikan file CSV (day.csv dan hour.csv) berada di folder data/.
