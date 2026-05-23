@@ -1,4 +1,5 @@
-# dashboard.py
+# Revisi: dashboard.py tanpa .style agar kompatibel dengan Streamlit
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -30,9 +31,9 @@ else:
 st.markdown("<h1 style='text-align: center; color: #1F3B6D;'>Bike Sharing Dashboard</h1>", unsafe_allow_html=True)
 st.markdown("---")
 
-# --- Data Table ---
+# --- Data Table (tanpa style agar aman) ---
 st.subheader("Tabel Data Filtered")
-st.dataframe(data_filtered.style.background_gradient(cmap='Blues'))
+st.dataframe(data_filtered)  # <-- hapus .style.background_gradient
 
 # --- KPIs / Statistik Ringkas ---
 st.subheader("Ringkasan Statistik")
@@ -64,10 +65,10 @@ if dataset_choice == "Day":
         names='weathersit',
         color='weathersit',
         color_discrete_map={
-            1: '#1F77B4',  # Clear / Cerah
-            2: '#6C757D',  # Mist / Cloudy
-            3: '#9467BD',  # Light Rain / Snow
-            4: '#D62728'   # Heavy Rain / Storm
+            1: '#1F77B4',
+            2: '#6C757D',
+            3: '#9467BD',
+            4: '#D62728'
         },
         title="User per Kondisi Cuaca"
     )
